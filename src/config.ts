@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-if(process.env.NODE_ENV!='prod'){
+if(process.env.NODE_ENV=='prod' || process.env.NODE_ENV=='dev' ){
     let dir=`.env.${process.env.NODE_ENV}`
     require('dotenv').config({ path: dir })
 }else require('dotenv').config()

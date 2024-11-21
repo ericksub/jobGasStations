@@ -14,7 +14,7 @@ const instance = axios.create({
 
 
 export const executeSync=async(data: any)=>{
-    await callApiPost(`${config.API.API_URL}`, data)
+    return await callApiPost(`${config.API.API_URL}api/v1/scrape`, data)
 }
 
 export const callApiGet=async (url:string)=>{

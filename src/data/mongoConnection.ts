@@ -9,7 +9,9 @@ let db: any;
 
 export const getDbConnection=async()=> {
     if (!client) {
+      console.log("Conectando a mongo");
       client = new MongoClient(URL);
+
       try {
         await client.connect();
         console.log("Conexión a MongoDB establecida");
