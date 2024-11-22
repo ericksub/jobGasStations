@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node build/index.js",
     "dev": "set NODE_ENV=dev&& ts-node-dev src/index.ts",
     "prod": "set NODE_ENV=prod&& ts-node-dev src/index.ts",
     "tsc": "tsc",
