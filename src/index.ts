@@ -7,7 +7,7 @@ import { getSyncStations } from './data/gasStation.data';
 dotenv.config();
 const app = express();
 
-if(process.env.NODE_ENV=='prod' || process.env.NODE_ENV=='dev' ){
+if(process.env.NODE_ENV=='prod' || process.env.NODE_ENV=='dev' || process.env.NODE_ENV=='job' ){
     let dir=`.env.${process.env.NODE_ENV}`
     require('dotenv').config({ path: dir })
 }else require('dotenv').config()

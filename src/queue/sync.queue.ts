@@ -30,7 +30,7 @@ const connection: any = getRedisConnection()
       
       await syncProcess(job)
     },
-    {  connection, concurrency: 2 }
+    {  connection, concurrency: 1 }
   );
   
   worker.on("completed", (job) => {
